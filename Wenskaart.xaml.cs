@@ -90,6 +90,7 @@ namespace Wenskaarten
                             Canvas.SetTop(cirkel, Double.Parse(invoer.ReadLine()));
                             cirkel.Height = 20;
                             cirkel.Width = 20;
+                            cirkel.MouseMove += new MouseEventHandler(Ellipse_MouseMove);
                             Kaart.Children.Add(cirkel);
                         }
                         ComboBoxLettertypes.SelectedItem = invoer.ReadLine();
